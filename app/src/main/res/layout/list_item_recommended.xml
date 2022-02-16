@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="2dp"
+    android:id="@+id/cl_recommended"
+    android:foreground="?selectableItemBackground"
+    android:background="@drawable/bg_round_grey">
+
+    <TextView
+        android:id="@+id/tv_paket"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Paket PROMO Combo Special"
+        android:textColor="@color/blackk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".6" />
+
+    <TextView
+        android:id="@+id/tv_kuota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="15 GB"
+        android:textColor="@color/blackk"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_paket"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paket" />
+
+    <TextView
+        android:id="@+id/tv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rp 30.000"
+        android:textColor="@color/blackk"
+        android:textStyle="bold"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_paket"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kuota" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:background="@color/grey"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_kuota"
+        app:layout_constraintStart_toEndOf="@+id/tv_kuota"
+        app:layout_constraintTop_toTopOf="@id/tv_kuota" />
+
+    <TextView
+        android:id="@+id/tv_durasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 Hari"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/blackk"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_kuota"
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/tv_kuota" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/grey_little_cardview"
+        app:cardCornerRadius="18dp"
+        android:layout_marginRight="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_harga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_harga">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sekali Beli"
+            android:paddingVertical="2dp"
+            android:paddingHorizontal="8dp"
+            android:textColor="@color/blackk"
+            android:textSize="10sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
